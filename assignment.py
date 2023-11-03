@@ -7,28 +7,29 @@ pizza_size = input("What size pizza do you want? L / XL")
 toppings_number = input("How much toppings do you want on your pizza? 1 / 2 / 3 / 4")
 
 # Calculate the pizza cost based on the size that the user asked for
+pizza_cost = 0
 if pizza_size == "L":
   pizza_cost = 6.00
-elif pizza_size == "XL:
+elif pizza_size == "XL":
   pizza_cost = 10.00
 
 # Calculate the toppings cost based on the number that the user asked for
-
+toppings_cost = 0
 if toppings_number == "1":
   toppings_cost = 1
 elif toppings_number == "2":
-  toppings_cost == 1.75
+  toppings_cost = 1.75
 elif toppings_number == "3":
   toppings_cost = 2.50
 elif toppings_number == "4":
   toppings_cost = 3.35
 
 # Calculate the cost of the order before tax
-subtotal = pizza_cost + toppings_number
+subtotal = pizza_cost + toppings_cost
   
 #Then calculate the tax by multiplying the total number by 1.13
-subtotal * 1.13
+total = subtotal * 1.13
 
 # Summarize the order for the user and tell them how much they owe
 
-print("You ordered a", pizza_size, "with", toppings_number)
+print("You ordered a", pizza_size, "pizza with", toppings_number, "toppings", "and your total is", total)
