@@ -1,5 +1,5 @@
 #Add the price of the pizza along with the price of the topping. 
-
+print("Welcome to Chaarlie's Pizzas!")
 # Collect the pizza size from the user
 pizza_size = input("What size pizza do you want (Large or Extra-Large)? L / XL: ")
 if pizza_size != 'L' and pizza_size != 'XL':
